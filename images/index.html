@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0740af2de6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <h2><strong>S</strong>reedevi <strong>I</strong>tta</h2>
+            </div>
+                <ul id="sidemenu" class="sidemenu">
+                    <li></li>
+                    <li><a href="#header"><strong>H</strong>ome</a></li>
+                    <li><a href="#about"><strong>A</strong>bout</a></li>
+                    <li><a href="#experiences"><strong>E</strong>xperience</a></li>
+                    <li><a href="#portfolio"><strong>P</strong>ortfolio</a></li>
+                    <li><a href="#contact"><strong>C</strong>ontact</a></li>
+                    <li><a href="#copyright"><strong>C</strong>opyright</a></li>
+                    <li class="close-menu" onclick="closemenu()"><i class="fas fa-times"></i></li>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p> <strong>W</strong>eb <strong>D</strong>eveloper</p>
+            <h1>Hi, I'm <span>Sreedevi Itta</span></h1>
+        </div>
+    </div>
+
+</div>
+<!--------------------about--------->
+
+
+<div id="pdf-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <iframe id="pdf-viewer" src="" frameborder="0"></iframe>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="about-card" id="about-card">
+            <div class="about-header">
+                <h1 class="sub-title">About Me</h1>
+            </div>
+            <div class="about-content">
+                <p>
+                    I am a dedicated web developer with hands-on experience in various technologies and CMS platforms. My background includes roles as a:
+                </p>
+                <ul>
+                    <li><strong>Web Developer Intern at The Sparks Foundation</strong></li>
+                    <li><strong>Junior Software Engineer at EPAM Systems</strong></li>
+                </ul>
+                <p>
+                    where I honed my skills in <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>MySQL</strong>. I have also worked with:
+                </p>
+                <ul>
+                    <li><strong>Java Spring Framework</strong></li>
+                    <li><strong>React</strong></li>
+                </ul>
+                <p>
+                    developing web and single-page applications. Additionally, I have practical experience with <strong>Drupal</strong> from a university project, where I contributed to building a website for a cultural event. I am also familiar with <strong>WordPress</strong> and am enthusiastic about expanding my expertise in CMS platforms.
+                </p>
+                <p>
+                    My experience has equipped me with a solid understanding of <strong>databases</strong>, <strong>data structures</strong>, and effective troubleshooting techniques.
+                </p>
+                <p>
+                    Although I am still developing my skills in <strong>prototyping</strong> and <strong>wireframing</strong>, I am eager to learn and adapt to new challenges. I am passionate about leveraging my skills and experiences to contribute to dynamic projects and am always looking for opportunities to grow and make an impact in the field of web development.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="tab-titles">
+    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+    <p class="tab-links" onclick="opentab('education')">Education</p>
+</div>
+<div class="tab-contents active-tab" id="skills">
+    <ul class="skills-list">
+        <li><span>Web Development(HTML, CSS, JavaScript)</span></li>
+        <li><span>React Development</span></li>
+        <li><span>Angular Development</span></li>
+        <li><span>Content Management Systems(WordPress, Drupal)</span></li>
+        <li><span>Data Structure & Algorithms</span></li>
+        <li><span>Java 8, Java Enterprise Application Development</span></li>
+        <li><span>Spring Boot Developer</span></li>
+        <li><span>Microservices Architecture</span></li>
+        <li><span>Single Page application Development</span></li>
+        <li><span>Basics of Wireframing & prototyping</span></li>
+    </ul>
+</div>
+<div class="tab-contents" id="experience">
+    <ul>
+        <li>
+            <span>2022 September - 2024 July</span><br><br>
+            <a href="#!" class="experience-link" onclick="openModal('EPAM_OFFER.pdf')">
+               <u> Software Engineer at EPAM SYSTEMS - Click to view Offer Letter</u>
+            </a>
+            <br><br>
+        </li>
+        <li>
+            <span>2022 February - 2022 May</span><br><br>
+            <a href="#!" class="experience-link" onclick="openModal('M9513665.pdf')">
+                <u>Java Engineer Intern at Mindtree - Click to view Experience Letter</u>
+            </a>
+            <br><br>
+        </li>
+        <li>
+            <span>2021 January - 2021 March</span><br><br>
+            <a href="#!" class="experience-link" onclick="openModal('6A5M63P33P.png')">
+               <u>Web Developer Intern at the Sparks Foundation - Click to view Experience Letter</u>
+            </a>
+            <br><br>
+        </li>
+    </ul>
+</div>
+<div class="tab-contents" id="education">
+    <ul>
+        <li><span>2024 August - Present</span><br><br>
+           <b> Masters in Computer Science at University of North Texas</b><br><br>
+           <ul><li><strong>Actively looking for web development activities and opportunities</strong></li><br><br></ul></li>
+        <li><span>2019 June - 2022 July</span><br><br>
+            <b>Bachelors in Computer Science at JNTU College of Engineering Kalikiri</b><br><br>
+            <ul><li><strong>Worked as a core member of Google Developer Student Club and facilitated cloud and mobile application development learning</strong></li><br><br></ul></li>
+        <li><span>2016 June - 2019 May</span><br><br>
+            <b>Diploma in Computer Engineering at Govt Polytechnic For Women Nellore</b><br><br>
+            <ul><li><strong>Volunteered to conduct surveys and promote awareness about hygiene and sanitation
+                practices in nearby villages</strong></li></ul></li>
+    </ul>
+</div>
+
+<!-----------------services------------->
+<div id="experiences">
+    <div class="container">
+        <h1 class="sub-title">My Experience</h1>
+        <div class="experience-list">
+            <div class="card-cont">
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card_front">
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Software Engineer at EPAM</h2>
+                        <p>Junior Java Backend Engineer with experience in building, maintaining, and troubleshooting Spring based applications, single page
+                            web applications.
+                            <br><br>Worked extensively with a wide range of technologies including Java8, Spring, Microservices, Logstash, React, HTML, CSS,
+                            JavaScript.<br><br><span>Hover to see skills learned</span>
+                        </p>
+                    </div>
+                    <div class="card_back">
+                        <ul>
+                            <li>Java8</li>
+                            <li>Spring Framework</li>
+                            <li>React Framework</li>
+                            <li>Angular Framework</li>
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>Microservices Architecture</li>
+                            <li>Logstash</li>
+                            <li>Parser Building</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card-cont">
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card_front">
+                        <i class="fa-brands fa-java"></i>
+                        <h2>Java Engineer Intern at Mindtree</h2>
+                        <p>Contributed to diverse in-house applications at Mindtree.
+                            <br><br>Worked with a range of technologies including Java, MYSQL, Spring, Angular and more.
+                            <br><br>Built a Hospital Management System using React, Spring Boot, Spring Rest, Spring JPA with MYSQL database and HTML, CSS
+                            and JavaScript<br><br><span>Hover to see skills learned</span>
+                        </p>
+                    </div>
+                    <div class="card_back">
+                        <ul>
+                            <li>Java8</li>
+                            <li>Spring Framework</li>
+                            <li>HTML5, CSS, JavaScript</li>
+                            <li>Spring MVC</li>
+                            <li>Spring JPA</li>
+                            <li>Spring Rest</li>
+                            <li>MySQL</li>
+                            <li>NoSQL</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-cont">
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card_front">
+                        <i class="fa-brands fa-html5"></i>
+                        <h2>Web Developer at The Sparks Foundation</h2>
+                        <p> Worked with a range of web technologies including HTML, CSS, JavaScript, Bootstrap.
+                            <br><br>Built a Basic Banking System with HTML, CSS and JavaScript and enhanced the UI.
+                            <br><br><span>Hover to see skills learned</span>
+                        </p>
+                    </div>
+                    <div class="card_back">
+                        <ul>
+                            <li>
+                                HTML
+                            </li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>XML, JSON</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------MY PROJECTS--------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="project-list">
+            <div>
+                <i class="fa-solid fa-building-columns"></i>
+                <h2>Basic Banking System</h2>
+                <p>Developed a feature-rich Basic Banking web application using HTML, CSS, JavaScript.
+                    <br><br>Delivered a comprehensive, user-friendly solution for basic banking operations like sending and receiving money.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-hospital"></i>
+                <h2>Hospital Management System</h2>
+                <p>Developed a robust hospital management web application with Angular and Spring Framework with SQL database.
+                 <br><br>The application features include patient and admin authentication and management, CRUD operations for booking
+                    appointments, view previous bookings, view/filter/search bookings.</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Quiz Management System</h2>
+                    <ul>
+                        <li>Developed online Quiz Application in which admin can create Quiz and user can take the quiz and retrieve scores.</li>
+                        <li>Integrated Spring MVC quiz management system with Spring Data JPA and MYSQL.</li>
+                        <li>Secured the application with Spring Security using OAuth tokens.</li>
+                        <li>Enhanced the project with Spring RESTful Web Services</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!------------contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>SreedeviItta@my.unt.edu</p>
+                <p><i class="fa-solid fa-phone"></i>+1817(845)6999</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/shree-devi-i/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://leetcode.com/u/sreedevi1/"><i class="fa-solid fa-code"></i></a>
+                    <a href="https://www.hackerrank.com/profile/sreedevi_itta"><i class="fa-brands fa-hackerrank"></i></a>
+                    <a href="https://www.linkedin.com/in/shree-devi-i/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="SreedeviIttaResume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button class="btn btn2" type="submit">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright" id="copyright">
+        <p>Copyright © Sreedevi, 2024</p>
+    </div>
+</div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    function openModal(pdfUrl) {
+        document.getElementById('pdf-viewer').src = pdfUrl;
+        document.getElementById('pdf-modal').style.display = 'block';
+    }
+    
+    function closeModal() {
+        document.getElementById('pdf-modal').style.display = 'none';
+    }
+</script>
+    
+<script>
+    var sidemenu= document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-250px";
+    }
+    function flipCard(cardElement) {
+    cardElement.classList.toggle('flipped');
+}
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxzh5iWPBS3up1kOIyl4RuZMc5dN8wjcpND2aLb-9Ub3Kvz5siZ2ebwS2OeqDwZhuCz3g/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully! Please allow 2-3 days to get a response back!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script>
+    // script.js
+
+    function applyfliptoback() {
+        const cardInner = this.closest('.card-inner');
+        cardInner.classList.add('flipped');
+    }
+
+    function applyfliptofront() {
+        const cardInner = this.closest('.card-inner');
+        cardInner.classList.remove('flipped');
+    }
+
+
+    // JavaScript for making the card appear on scroll
+    document.addEventListener('scroll', function() {
+        const card = document.getElementById('about-card');
+        const cardPosition = card.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight;
+
+        if (cardPosition < screenPosition) {
+            card.classList.add('visible');
+        }
+    });
+</script>
+  
+</body>
+</html>
